@@ -22,7 +22,7 @@
 ## ▶️ Como executar o programa
 ```bash
 python main.py
-```md
+```
 
 ## ▶️ Menu principal
 <img width="235" height="245" alt="image" src="https://github.com/user-attachments/assets/6d2462a2-ea1c-4cbb-81e5-c805563a011c" />
