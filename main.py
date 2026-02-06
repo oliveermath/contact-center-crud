@@ -70,10 +70,31 @@ def edicao_contato(): # Função para editar contato
 
 # Criando função para cadastro de contato
 def cadastrar_contato(id): # Recebe apenas o paramêtro (id)
-    nome = input('> Digite o nome: ') 
-    atividade = input('> Digite a atividade: ')
 
-    while True:
+    # loop para cadastrar com nome, atividade e telefone
+    while True: 
+        nome = input('> Digite o nome: ').strip() 
+        atividade = input('> Digite a atividade: ').strip()
+
+    # Nome e atividade não podem ser vazios
+        if not nome:
+            print('> Nome não pode ser vazio')
+            continue
+
+        if not atividade:
+            print('> Atividade não pode ser vazio')
+            continue
+
+    # validação para nome e atividade, ambos campos só podem letras (isalpha), e trocando espaço no nome por vazio com (replace)
+        if not nome.replace(" ", "").isalpha(): 
+            print('> Nome deve conter apenas letras')
+            continue
+
+        if not atividade.replace(" ", "").isalpha():
+            print('> Atividade deve conter apenas letras')
+            continue
+
+    # Validação no telefone, campo precisa receber apenas números
         try:
             telefone = int(input('> Digite o telefone: '))
             break
@@ -85,7 +106,7 @@ def cadastrar_contato(id): # Recebe apenas o paramêtro (id)
                     'atividade': atividade,
                     'telefone': telefone} 
 
-    lista_contatos.append(novo_contato.copy()) # Copiando os valores da meu dict, para a lista
+    lista_contatos.append(novo_contato) # Adicionando os valores da meu dict, para a lista
  
 
 
