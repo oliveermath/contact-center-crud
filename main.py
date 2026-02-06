@@ -19,12 +19,12 @@ def edicao_contato(): # Função para editar contato
     for i in lista_contatos: # for para iterar sobre minha lista de contatos
         if id_busca == i['id']: 
             encontrado = True  
-            print(60 * '-')
+            print(40 * '-')
             print(f"> Contato encontrado com sucesso, {i['nome']}")
 
 
             while True: # loop novamente para entrar no menu edição, onde o usuário escolhe qual dado deseja mudar
-                print(30 * '-')
+                print(40 * '-')
                 print('> Os dados disponiveis para mudança são: ')
                 print('1 - Nome')
                 print('2 - Atividade')
