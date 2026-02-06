@@ -1,6 +1,6 @@
 # 📞 Contact-Center CRUD (Python)
 
-> Projeto feito em Python de um CRUD (Create, Read, Update, Delete) simples para cadastro de contatos em terminal
+> Projeto feito em Python de um CRUD (Create, Read, Update, Delete) para cadastro de contatos via terminal
 
 ## 🚀 Funcionalidades do projeto 
 - Cadastrar contatos
